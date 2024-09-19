@@ -1,0 +1,50 @@
+
+.ommig-container {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+}
+
+.top-left {
+    align-self: flex-start; 
+    margin-right: auto; 
+    width: 90%;
+}
+
+.bottom-right {
+    align-self: flex-end; 
+    margin-left: auto;
+    width: 80%;
+}
+
+
+h5 {
+    font-size: 6.5vw;
+    line-height: 4.5vh;
+}
+
+.ommig-border-text {
+    border: 3px solid #402FAB;
+    box-shadow: 2px 2px 20px #0074d97d, -2px -2px 20px rgba(11, 0, 217, 0.52);
+    border-radius: 0 20px 10px 20px;
+    padding: 3vw;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+}
+
+@media (min-width: 768px) {
+    h5 {
+        font-size: 3vw;
+        line-height: 7vh;
+        width: 60%;
+    }
+    .ommig-border-text {
+        width: 80%;
+        font-size: 1.2vw;
+        line-height: 1.6vw;
+        padding: 1.5vw;
+    }
+    .bottom-right {
+        width: 50%;
+    }
+}

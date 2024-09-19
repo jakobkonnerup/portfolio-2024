@@ -1,0 +1,150 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    transition: 0.7s ease;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.text-box {
+    flex: 1;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    margin-top: 3.5vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #171717;
+    padding: 5vw;   
+
+}
+
+.image-box {
+
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #171717;
+    overflow: hidden;
+}
+
+.projects:hover {
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.image-box img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    display: block;
+}
+
+.specify {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    padding: 1.5vw;
+    border: #0074D9 2px solid;
+    box-shadow: 2px 2px 20px #0074d97d, -2px -2px 20px rgba(11, 0, 217, 0.52);
+    z-index: 2;
+    width: 70%;
+    margin-bottom: 2vh;
+}
+
+.specify-text {
+    font-size: 1.3vh;
+    font-weight: 600;
+    background: linear-gradient(to right, #0074D9, #402FAB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.specify::after {
+    content: '';
+    position: absolute;
+    height: 7%;
+    width: 65%;
+    background-image: linear-gradient(to bottom right, #0074D9, #402FAB) ;
+    z-index: -1;
+    border-radius: 50px;
+  }*/
+
+h3 {
+    font-size: 3vh;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 4vw;
+    line-height: 3vh;
+}
+
+
+@media (min-width: 768px) {
+    .projects {
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .text-box {
+        flex: 3;
+        width: 60vw;
+        height: 15vw;
+        margin-top: 10vh;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        padding: 1vw;  
+        padding-right: 5vw; 
+    
+    }
+
+    .image-box {
+        flex: 1;
+        display: flex;
+        flex: 1;
+        width: 100%;
+        height: 17vw;
+        margin-right: 2vw;
+        margin-top: 10vh;
+        justify-content: space-evenly;
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+    }
+
+
+    h3 {
+        font-size: 4vh;
+        margin: 0;
+    }
+    .project-description {
+        font-size: 1vw;
+        line-height: 3vh;
+    }
+
+    .image-box img {
+        height: 100%;
+    }
+
+    .specify {
+        width: 27%;
+        padding: 0.3vh;
+    }
+  }
