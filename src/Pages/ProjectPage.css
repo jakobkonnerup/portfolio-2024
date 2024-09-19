@@ -1,0 +1,336 @@
+.project-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-section h4 {
+    padding-top: 15vh;
+    padding-left: 5vw;
+}
+.project-section h2 {
+    padding-left: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+    font-size: 3rem;
+}
+
+.project-image {
+    border-radius: 20px;
+}
+
+.project-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Styles for beskriv kort */
+.describe-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.describe {
+    align-content: center;
+    background-color: #171717;
+    width: 14%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center; 
+    box-shadow: 10px 10px 5px 0 #0f0f0f;
+}
+.describe p {
+    font-weight: 1000;
+}
+
+
+/* Styles for min rolle lister */
+
+.roles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.roles h6 {
+    font-size: 1.2rem;
+}
+
+.roles ul {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    list-style: none;
+}
+
+.roles ul li {
+    padding-bottom: 1vw;
+    color: #dbdbdb;
+}
+
+
+/* Styles for projekt-beskrivelse/uddybelse */ 
+
+.projekt-beskrivelse {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    line-height: 1.5rem;
+    width: 40%;
+    padding: 5vw;
+}
+
+.projekt-beskrivelse h3 {
+    padding-bottom: 2vh;
+}
+
+.projekt-uddybelse {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    line-height: 1.5rem;
+    width: 40%;
+    padding: 5vw;
+}
+
+/* IMAGE */ 
+
+.project-image2 {
+    width: 100%;
+}
+.project-image2 img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* STYLING FOR Design seciton */
+
+.design-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 16vh;
+
+}
+
+.design-headline {
+    width: 40%;
+}
+
+.design-images  {
+    padding-right: 2vw;
+    width: 26%;
+}
+.design-images img {
+    width: 100%;
+    height: 100%;
+}
+
+.design-images2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32.5%;
+}
+
+.design-images2 img {
+    width: 100%;
+    height: auto;
+}
+
+.project-image3 {
+    margin-top: 10vh;
+    border-radius: 20px;
+}
+
+.project-image3 img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* STYLES FOR REFLEKSION OVER PROJEKT */
+
+.closer-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15vh;
+}
+
+.closer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    width: 50%;
+
+}
+
+.closer2 {
+    display: flex;
+    width: 40%;
+    height: 80vh;
+    justify-content: flex-end;
+    line-height: 1.5rem;
+}
+
+.closer1 button {
+    width: 15vw;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+  }
+
+  .closer1 button::after {
+    content: '';
+    position: absolute;
+    height: 7%;
+    width: 15.5%;
+    background-image: linear-gradient(to bottom right, #0074D9, #402FAB) ;
+    z-index: -1;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 769px) {
+    .project-section h2 {
+        font-size: 2rem;
+        padding-bottom: 6vh;
+    }
+
+    .project-image img {
+        object-fit: cover; 
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-image  {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    /* DECVIBE STYLE */
+
+    .describe-container {
+        height: 4vh;
+    }
+    .describe p {
+        font-size: 0.55rem;
+    }
+    
+    /* ROLES STYLE */
+    .roles-container {
+        flex-direction: column;
+    }
+    
+    .roles h6 {
+        font-size: 2rem;
+    }
+    
+    .roles ul li {
+        padding-bottom: 2vw;
+        font-size: 1.2rem;
+    }
+
+
+    /* STYLES FOR AFGANSING */
+    .projekt-beskrivelse {
+        align-self: flex-start;
+        line-height: 1.7rem;
+        width: 90%;
+    }
+
+
+    .projekt-uddybelse {
+        line-height: 1.7rem;
+        width: 90%;
+        padding-bottom: 15vh;
+    }
+    /* STYLES FOR designerspecs */
+    .design-container {
+        flex-direction: column;
+        margin-top: 8vh;
+    }
+    .design-headline {
+        width: 80%;
+    }
+    
+    .design-images  {
+        padding-right: 0;
+        padding-bottom: 4%;
+        width: 80%;
+        align-self: center;
+    }
+
+    
+    .design-images2  {
+
+        align-self: center;
+        width: 80%;
+        height: 38vh;
+    }
+
+    .project-image3 img {
+        object-fit: cover; 
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-image3  {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    }
+    /* STYLES FOR REFLEKSION OVER PROJEKT */
+
+.closer-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 15vh;
+}
+
+.closer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 25vh;
+    width: 50%;
+}
+
+.closer2 {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    justify-content: flex-start;
+    line-height: 1.7rem;
+}
+
+.closer1 button {
+    width: 35vw;
+  }
+
+  .closer1 button::after {
+
+    width: 37%;
+
+  }
+  }
