@@ -1,0 +1,364 @@
+/* NAV_BAR STYLING */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin-left: -5vw;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  background-color: transparent;
+  position: fixed;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 5;
+}
+.nav-links li {
+  padding-left: 6vw;
+  font-weight: 550;
+  z-index: 5;
+  
+  transition: 2s ease;
+}
+.nav-links li a:hover {
+  color: #FFF95E;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*BURGERMENU STYLING */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+
+
+.burger.open .line1 {
+  transform: rotate(45deg) translateY(10px) translateX(1px);
+  background-color: #757575;
+}
+
+.burger.open .line2 {
+  opacity: 0;
+}
+
+.burger.open .line3 {
+  transform: rotate(-45deg) translateY(-11px) translateX(1px);
+  background-color: #757575;
+}
+.burger.open {
+  display: block; 
+}
+
+
+/* Styling for light and dark theme 
+
+Det nÃ¥ede jeg desvÃ¦rre ikke Ã¸vbÃ¸v*/
+
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30vw; 
+  height: 40vh;
+  background: radial-gradient(circle, rgba(36, 0, 194, 0.657), rgb(55, 22, 240));
+  filter: blur(300px);
+  transform: translate(0, -50%); 
+  z-index: -1; 
+}
+
+.App, .Project4Page {
+  margin: 0 7.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  margin: 0 7.5%;
+}
+
+
+
+
+
+
+/* Styles for the hero typography */
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 20vh;
+}
+
+/* Styles for the animation container */
+.animation-container {
+  display: flex;
+  position: absolute;
+  left: -30%;
+  top: 20%;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* 1/8 of screen height */
+  width: 100vw; /* 1/3 of screen width */
+  padding-top: 10vh;
+
+}
+
+/* Styles for the rotating shape */
+.shape1 {
+  position: absolute;
+  width: 30%;
+  height: 51%;
+  border: white 2px solid;
+  animation: rotate 30s linear infinite;
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(22, 3, 167, 0.538);
+}
+
+
+.shape3 {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  border: white 2px solid;
+  animation: rotate 20s linear infinite;
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(22, 3, 167, 0.538);
+}
+.shape4 {
+  position: absolute;
+  width: 15%;
+  height: 90%;
+  border: white 2px solid;
+  animation: rotate 20s linear infinite;
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(22, 3, 167, 0.538);
+}
+
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.velkommen {
+  margin-left: 0vw;
+}
+.under-hero {
+  display: block;
+flex-direction: column;
+}
+
+
+
+/* Styles for sektion-texts */
+
+.text-project {
+  color: #FFF95E;
+}
+
+.text-caroussel {
+  color: aqua;
+}
+
+.text-ommig {
+  color: #0074D9;
+}
+
+.text-programmer {
+  color: #2fab42;
+}
+
+.text-programmer, .text-ommig, .text-caroussel, .text-project {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+
+
+/* Media Quieries*/
+
+@media (min-width: 768px) {
+  h1 {
+    margin-left: 20vw;
+    width: 60%;
+    font-size: 6.7vw;
+    text-align: center;
+  }
+  .velkommen {
+    width: 34%;
+  }
+  .under-hero {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .App::before {
+    top: 70%;
+    left: 40%;
+    width: 60vw; 
+    height: 40vh;
+    filter: blur(600px); /* Adjust blur amount as needed */
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding-bottom: 2vw;
+    top: 0px;
+    right: -16%;
+    width: 60%;
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+    padding-left: 5%;
+    background-color: #171717;
+    text-align: left;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 5px 20px #00000067;
+    opacity: 0;
+    transition: 3s ease;
+  }
+  .nav-links li {
+    padding-left: 0;
+    width: 100%;
+    font-size: 4vw;
+    padding-bottom: 1vh;
+    padding-top: 2vh;
+    padding-left: 2vh;
+
+  }
+
+  nav ul li {
+    margin-left: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+    height: 60%;
+    opacity: 1;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: block;
+  }
+  .burger.open,
+  .close-button.open {
+    display: block;
+  }
+  .close-button {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  /* ANMATIONS STYLES */
+  .animation-container {
+    display: flex;
+    position: absolute;
+    left: -15%;
+    top: -8%;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* 1/8 of screen height */
+    width: 100vw; /* 1/3 of screen width */
+    padding-top: 10vh;
+  
+  }
+  
+  /* Styles for the rotating shapes */
+  .shape1 {
+    position: absolute;
+    width: 20%;
+    height: 28%;
+    border: white 2px solid;
+    animation: rotate 30s linear infinite;
+    border-radius: 50%; 
+    box-shadow: 0 0 20px rgba(22, 3, 167, 0.538);
+  }
+  
+  
+  .shape3 {
+    position: absolute;
+    width: 24%;
+    height: 50%;
+    border: white 2px solid;
+    animation: rotate 20s linear infinite;
+    border-radius: 50%; 
+    box-shadow: 0 0 20px rgba(22, 3, 167, 0.538);
+  }
+  .shape4 {
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    border: white 2px solid;
+    animation: rotate 20s linear infinite;
+    border-radius: 50%; 
+    box-shadow: 0 0 20px rgba(22, 3, 167, 0.538);
+  }
+
+  h1 {
+    padding-top: 30vh;
+  }
+}
