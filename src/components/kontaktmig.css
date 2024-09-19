@@ -1,0 +1,59 @@
+.kontakt {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Space between items */
+  align-items: flex-start; 
+}
+
+.kontakt img {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+
+.kontakt-mig {
+    width: 38vw;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+  }
+
+  .kontakt-mig::after {
+    content: '';
+    position: absolute;
+    height: 7%;
+    width: 40%;
+    background-image: linear-gradient(to bottom right, #0074D9, #402FAB) ;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .kontakt-mig:hover {
+    background-color: transparent;
+    transition: ease-in-out 120ms;
+    box-shadow: 30px 0px 50px #261c67, -30px 2px 50px #0074D9;
+  }
+
+  @media (min-width: 768px) {
+    .kontakt-mig {
+        width: 12vw;
+        margin-right: 2vw;
+    }
+    .kontakt-mig::after {
+        width: 12.5vw;
+    }
+    .kontakt {
+        justify-content: flex-end;
+    }
+
+  }
